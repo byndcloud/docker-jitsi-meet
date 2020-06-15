@@ -8,7 +8,7 @@ Create a namespace to deploy jitsi to:
 
 Add the secret with secret values (replace `...` with some random strings):
 
-`kubectl create secret generic jitsi-config -n jitsi --from-literal=JICOFO_COMPONENT_SECRET=... --from-literal=JICOFO_AUTH_PASSWORD=... --from-literal=JVB_AUTH_PASSWORD=... `
+`kubectl create secret generic jitsi-config -n jitsi --from-literal=JICOFO_COMPONENT_SECRET=c72872e6f683f24bd40391b242908739 --from-literal=JICOFO_AUTH_PASSWORD=46d4a9d906dbc7bc761cf152a3197691 --from-literal=JVB_AUTH_PASSWORD=e94021bbdeedaf952dff2c4493fbda16 `
 
 Deploy the service to listen for JVB UDP traffic on all cluster nodes port 30300:
 
